@@ -19,10 +19,6 @@ The other two classes, Et200SpMF and IOLinkMaster, can be further developed or c
 
 In the const.py file, declarations include constants such as IP addresses, datasets/data records for specific purposes, a list of ports for IO-Link Masters etc. Some of these information can be edited depending on the user / device specification (e.g. IP-Address, naming of the elements of the port / module lists etc). It is not advised to change the dataset constants since they are based on the hardware setup used and on the PROFINET Specification.
 
-First step to running the code, is to install all the necessary libraries. All the libraries can be found in [requirements.txt](app/requirements.txt) file. They can be installed directly by running this on the terminal:
-```
-$ pip install -r requirements.txt
-```
 Additionally, an application example or an example on how to use these classes can be found in [main.py](app/main.py) file. Here is an UI programmed with bokeh which runs in a bokeh server. The web-application can run by running this line on the terminal:
 ```
 $ bokeh serve --show main.py
