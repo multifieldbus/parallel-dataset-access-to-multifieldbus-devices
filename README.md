@@ -5,7 +5,7 @@ The key focus is on ensuring that this data collection does not impact the core 
 
 The approach outlined in this example demonstrates a method to extract additional information from the field and peripheral level without requiring adjustments or expansions to the existing PROFINET-based automation solution. The key advantage is that neither the control program nor the fundamental hardware structure needs to be modified. In the optimal scenario, it suffices to replace the interface module of the utilized SIMATIC peripheral station.
 
-![Network Overview](docs/Network.png?raw=true)
+![Network Overview](docs/Network.png?raw=true "Network Overview")
 
 ![Concept (Part 1)](docs/Concept_1.png?raw=true)
 
