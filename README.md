@@ -13,13 +13,13 @@ The approach outlined in this example demonstrates a method to extract additiona
 
 ## How to use the solution / application example
 
-This application lays the groundwork of potential future IT applications. It offers a library (found in [mfMb.py](app/mfMb.py)) with 3 classes (MfMbCtrl, Et200SpMf, IOLinkMaster) which are used for communication with MultiFieldbus devices. In the class MfMbCtrl, the 3-staged Communication Methods for writing DS to / reading DS from MultiFieldbus Devices. This class shall not be changed/modified. 
+This application lays the groundwork of potential future IT applications. It offers a library (found in [mfMb.py](src/app/mfMb.py)) with 3 classes (MfMbCtrl, Et200SpMf, IOLinkMaster) which are used for communication with MultiFieldbus devices. In the class MfMbCtrl, the 3-staged Communication Methods for writing DS to / reading DS from MultiFieldbus Devices. This class shall not be changed/modified. 
 
 The other two classes, Et200SpMF and IOLinkMaster, can be further developed or converted to another programming language depending on the specific requirements of the user. Both inherit the class MfMbCtrl and use its functions for communication with MF Devices. They are both depended on the hardware setup (e.g. ET 200SP IM MF on the submodules like DI, DO etc. and their order in the rack). Therefore some of the functions in this library have to be modified depending on the user use case or hardware setup.
 
 In the const.py file, declarations include constants such as IP addresses, datasets/data records for specific purposes, a list of ports for IO-Link Masters etc. Some of these information can be edited depending on the user / device specification (e.g. IP-Address, naming of the elements of the port / module lists etc). It is not advised to change the dataset constants since they are based on the hardware setup used and on the PROFINET Specification.
 
-Additionally, an application example or an example on how to use these classes can be found in [main.py](app/main.py) file. Here is an UI programmed with bokeh which runs in a bokeh server. The web-application can run by running this line on the terminal:
+Additionally, an application example or an example on how to use these classes can be found in [main.py](src/app/main.py) file. Here is an UI programmed with bokeh which runs in a bokeh server. The web-application can run by running this line on the terminal:
 ```
 $ bokeh serve --show main.py
 ```
