@@ -7,9 +7,7 @@ The approach outlined in this example demonstrates a method to extract additiona
 
 ![Network Overview](docs/Network.png?raw=true "Network Overview")
 
-![Concept (Part 1)](docs/Concept_1.png?raw=true)
-
-![Concept (Part 2)](docs/Concept_2.png?raw=true)
+Here you can find a more detailled documentation of this application and how to use it: [Documentation](109987554_PN_MB_Parallel_Access_DOKU_V10_en.pdf)
 
 ## How to use the solution / application example
 
